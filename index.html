@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+  </head>
+<body>
+
+    <div class="header">
+       <div class="header-container">
+        <center><img src="images/profile.png" alt="" class="crop"></center>
+            <div class="name">Adam Pierce Arcillas</div>
+            <div class="social">
+              <form action="https://www.facebook.com/admpierce"><button class="social-btn"><i class="fa-brands fa-facebook-f fa-2x"></i></button></form>
+              <form action="https://www.github.com/ppsych0p0mpp"><button class="social-btn"><i class="fa-brands fa-github fa-2x"></i></button></form>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'About')" id="defaultOpen">ABOUT</button>
+        <button class="tablinks" onclick="opentab(event, 'Projects')">PROJECTS</button>
+        <button class="tablinks" onclick="opentab(event, 'Contact')">CONTACT</button>
+      </div>
+      <!--About-->
+<div class="contents">
+      <div id="About" class="tabcontent">
+<div class="content-box">
+        <div class="about-intro"> I'm Adam Pierce Arcillas 22 years old, currently a third year college student pursuing Bachelor of Science in Information Technology who has a passion in exploring the world of programming and designing.</div>
+      </div>
+      <div class="about-title">Tech Stacks</div>
+       <div class="skills-container">
+        <div class="skills-box">
+          <div class="skills-content"> 
+              <div> <img src="images/design.svg" height="70px" alt="design"></div>
+          </div>
+                <div class="skill-title">Frameworks</div> 
+                <div class="services">
+                <li>HTML/CSS <img src="images/html-1.svg" alt="" class="trans" width="50" height="30"><img src="images/css-3.svg" alt="" class="trans" width="30" height="30"></li>
+                <li>Bootstrap <img src="images/bootstrap-5-1.svg" alt="" class="trans" width="60" height="30"></li>
+                <li>ASP .NET Core & MAUI<img src="images/dot-net-core-7.svg" alt="" class="trans" width="60" height="30"></li>
+              </div>
+            </div>
+        <div class="skills-box">
+          <div class="skills-content"> 
+            <img src="images/dev.svg" height="70px" alt="dev">
+          </div>
+          <div class="skill-title-dev">Programming</div> 
+          <div class="services">
+                <li>C# <img src="images/c--4.svg" alt="" class="trans" width="50" height="30"></li>
+                <li>Javascript <img src="images/javascript.svg" alt="" class="trans" width="50" height="30"></li>
+                <li>SQL Server <img src="images/microsoft-sql-server-1.svg" alt="" class="trans" width="50" height="30"></li>
+          </div>
+        </div>
+      </div>
+      <div class="about-title">EDUCATION</div>
+      <div class="content-box">
+          <div class="education-content">
+          <div class="circle1"></div>
+          <div class="timeline"></div>
+          <div class="college">2022 - Present</div>
+          <div class="about-intro">Bachelor of Science in Information Technology (BSIT)<br>Asian College Technology (ACT)<br> ACT Bldg, P. Del Rosario St, Cebu City, 6000 Cebu</div>
+      </div>
+    </div>
+    </div>
+    <!--Projects-->
+          <div id="Projects" class="tabcontent">
+          <div class="content-box">
+            <div class="about-intro"> These are the personal projects that I worked on to showcase and to improve my skills. List will be updated once there is a new project. </div>
+          </div>
+          <div class="about-title">WEB APPLICATION</div>
+            <div class="content-box-project">
+              <div class="proj-cover">
+                <img src="images/projects/Pokemon.png" alt="">
+              </div>
+              <div class="proj-title">Pokédex Web Application</div> 
+              <div class="about-intro">This interactive Pokédex web application allows users to explore and discover detailed information about different Pokémon. Built using vanilla JavaScript, HTML, and CSS, this project demonstrates fundamental web development skills while creating an enjoyable user experience. </div>
+              <div class="view-proj">
+              <button><a href="https://ppsych0p0mpp.github.io/PokemonwithJS/" target="_blank"><i class="fa-solid fa-eye"></i>View Project</a></button></div>
+            </div>
+            <div class="content-box-project">
+              <div class="proj-cover">
+                <img src="images/projects/Ecommerce.png" alt="">
+              </div>
+              <div class="proj-title">Musical Instruments E-Commerce Platform</div> 
+              <div class="about-intro">An end-to-end e-commerce website specializing in high-quality musical instruments, featuring a curated selection of electric guitars, bass guitars, acoustic guitars, drums, and pianos. Built with a focus on both customer experience and administrative functionality.</div>
+              <div class="view-proj">
+              <button><a href="https://ppsych0p0mpp.github.io/E-commerce/" target="_blank"><i class="fa-solid fa-eye"></i>View Project</a></button></div>
+            </div>
+            <div class="about-title">MOBILE APPLICATION</div>
+            <div class="content-box-project">
+              <div class="unit">
+                <img src="images/projects/Unit.jpg" alt="">
+              </div>
+              <div class="proj-title">Multi-Purpose Unit Converter (.NET MAUI)</div> 
+              <div class="about-intro">A versatile unit conversion application developed using .NET MAUI (Multi-platform App UI), providing a modern and cross-platform solution for various measurement conversions. Core Features </div>
+              <div class="view-proj">
+              <button><a href="https://github.com/ppsych0p0mpp/Unit-Converstion-.NET-MAUI-" target="_blank"><i class="fa-solid fa-eye"></i>View Source Code</a></button></div>
+
+            </div>
+          </div>
+          <!-- Contact-->
+      <div id="Contact" class="tabcontent">
+        <div class="contents">
+          <div class="content-box">
+           <div class="content-body">
+            <label for="Name" class="contact-info">Mobile Number:</label>
+            <div class="contact-input">
+                <div><a href="tel:+639666093462">+639666093462</a></div>
+            </div>
+            <label for="Email" class="contact-info">Email Address:</label>
+            <div class="contact-input">
+              <div><a href="mailto:admpierce1@gmail.com">admpierce1@gmail.com</a></div>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
